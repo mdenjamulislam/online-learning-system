@@ -24,7 +24,10 @@ def init_db():
                     id INT AUTO_INCREMENT PRIMARY KEY,
                     title VARCHAR(255) NOT NULL,
                     description TEXT,
-                    instructor VARCHAR(255)
+                    instructor VARCHAR(255),
+                    price DECIMAL(5,2),
+                    video_url VARCHAR(255),
+                    thum_url VARCHAR(255)
                 )
             ''')
 
@@ -34,6 +37,18 @@ def init_db():
         return jsonify({'error': str(e)})
     
 
+# Get data from database
+
+# Get all courses
+@app.route('/courses', methods=['GET'])
+def get_courses():
+    try:
+        with connection.cursor() as cursor:
+            cursor.execute("SELECT * FROM courses")
+            courses = cursor.fetchall()
+            return jsonify(courses)
+    except Exception as e:
+        return jsonify({'error': str(e)})
 
 
 if __name__ == '__main__':
