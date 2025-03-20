@@ -35,8 +35,19 @@ def init_db():
                 CREATE TABLE IF NOT EXISTS students (
                     id INT AUTO_INCREMENT PRIMARY KEY,
                     name VARCHAR(255) NOT NULL,
+                    date_of_birth DATE,
                     email VARCHAR(255) NOT NULL,
-                    password VARCHAR(255) NOT NULL
+                    phone VARCHAR(255),
+                    bio TEXT,
+                    password VARCHAR(255) NOT NULL,
+                    address TEXT,
+                    city VARCHAR(255),
+                    state VARCHAR(255),
+                    country VARCHAR(255),
+                    zip_code VARCHAR(255),
+                    profile_image VARCHAR(255)
+                    course_id INT,
+                    FOREIGN KEY (course_id) REFERENCES courses(id)
                 )
             ''')
 
