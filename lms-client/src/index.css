@@ -1,0 +1,9 @@
+@import "tailwindcss";
+@plugin "daisyui" {
+  themes: all;
+}
+@layer components {
+  .container {
+    margin: 0 auto;
+  }
+}
