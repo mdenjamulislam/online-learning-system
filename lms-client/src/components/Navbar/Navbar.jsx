@@ -17,26 +17,23 @@ const Navbar = () => {
         <nav className="w-full bg-base-100 shadow-lg sticky top-0 z-50">
             <div className="container navbar">
                 <div className="navbar-start">
-                    <Link to="/" className="text-xl">
-                        LMS
+                    <Link to="/" className="text-xl uppercase font-bold">
+                        Dev<span className="text-accent">Skill</span>
                     </Link>
                 </div>
                 <div className="navbar-end gap-3">
-                    <label className="swap swap-rotate">
+                    <label className="swap swap-rotate btn btn-ghost btn-circle">
                         {/* this hidden checkbox controls the state */}
                         <input type="checkbox" onClick={handleThemeToggle} className="theme-controller" value="dark" />
-                        <GoSun className="swap-off text-2xl fill-current" />
-                        <IoMoonOutline className="swap-on text-2xl fill-current" />
+                        <GoSun className="swap-off text-xl fill-current" />
+                        <IoMoonOutline className="swap-on text-xl fill-current" />
                     </label>
-                    {/* <div className="flex items0-center gap-2">
-                    <Link to="/register" className="btn btn-primary btn-sm lg:btn-md">
-                        Register
-                    </Link>
-                    <Link to="/login" className="btn btn-primary btn-sm lg:btn-md">
-                        Login
-                    </Link>
-                </div> */}
-                    <div className="dropdown dropdown-end">
+                    <div className="flex items-center gap-2">
+                        <Link to="/login" className="btn btn-accent btn-sm lg:btn-md rounded-full px-6">
+                            Join Us
+                        </Link>
+                    </div>
+                    {/* <div className="dropdown dropdown-end">
                         <div tabIndex={0} role="button" className="btn btn-ghost btn-circle avatar">
                             <div className="w-10 rounded-full">
                                 <img alt="Tailwind CSS Navbar component" src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp" />
@@ -56,7 +53,7 @@ const Navbar = () => {
                                 <a>Logout</a>
                             </li>
                         </ul>
-                    </div>
+                    </div> */}
                 </div>
             </div>
         </nav>
