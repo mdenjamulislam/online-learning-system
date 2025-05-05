@@ -23,6 +23,8 @@ def init_db():
                 CREATE TABLE IF NOT EXISTS courses (
                     id INT AUTO_INCREMENT PRIMARY KEY,
                     title VARCHAR(255) NOT NULL,
+                    category VARCHAR(255) NOT NULL,
+                    level VARCHAR(255), ## Beginner, Intermediate, Advanced
                     description TEXT,
                     instructor VARCHAR(255),
                     price DECIMAL(5,2),

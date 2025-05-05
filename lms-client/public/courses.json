@@ -1,0 +1,112 @@
+[
+    {
+        "id": 1,
+        "title": "Web Development Bootcamp",
+        "category": "Web Development",
+        "level": "Beginner",
+        "description": "A comprehensive guide to modern web development with HTML, CSS, and JavaScript",
+        "instructor": "John Doe",
+        "price": 49.99,
+        "video_url": "https://vimeo.com/example/webdev",
+        "thum_url": "https://images.unsplash.com/photo-1550439062-609e1531270e"
+    },
+    {
+        "id": 2,
+        "title": "Python for Beginners",
+        "category": "Programming",
+        "level": "Beginner",
+        "description": "Learn Python programming from scratch with hands-on exercises",
+        "instructor": "Jane Smith",
+        "price": 0.0,
+        "video_url": "https://youtube.com/embed/python101",
+        "thum_url": "https://images.unsplash.com/photo-1542831371-29b0f74f9713"
+    },
+    {
+        "id": 3,
+        "title": "Mobile App Development",
+        "category": "Mobile Development",
+        "level": "Intermediate",
+        "description": "Build cross-platform mobile apps with React Native",
+        "instructor": "Mike Johnson",
+        "price": 79.99,
+        "video_url": "https://vimeo.com/example/reactnative",
+        "thum_url": "https://images.unsplash.com/photo-1581276879432-15e94d4dbdf2"
+    },
+    {
+        "id": 4,
+        "title": "Digital Marketing Fundamentals",
+        "category": "Marketing",
+        "level": "Beginner",
+        "description": "Master SEO, social media marketing, and content strategy",
+        "instructor": "Sarah Wilson",
+        "price": 29.99,
+        "video_url": "https://youtube.com/embed/digital-marketing",
+        "thum_url": "https://images.unsplash.com/photo-1499951360447-b19be8fe80f5"
+    },
+    {
+        "id": 5,
+        "title": "UI/UX Design Principles",
+        "category": "Design",
+        "level": "Intermediate",
+        "description": "Create beautiful and user-friendly interfaces",
+        "instructor": "Emily Brown",
+        "price": 59.99,
+        "video_url": "https://vimeo.com/example/uiux",
+        "thum_url": "https://images.unsplash.com/photo-1517694712202-14dd9538aa97"
+    },
+    {
+        "id": 6,
+        "title": "Data Science Essentials",
+        "category": "Data Science",
+        "level": "Intermediate",
+        "description": "Introduction to data analysis and machine learning",
+        "instructor": "David Lee",
+        "price": 89.99,
+        "video_url": "https://youtube.com/embed/datascience",
+        "thum_url": "https://images.unsplash.com/photo-1551288049-bebda4e38f71"
+    },
+    {
+        "id": 7,
+        "title": "Photography Masterclass",
+        "category": "Photography",
+        "level": "Advanced",
+        "description": "Professional photography techniques and editing",
+        "instructor": "Olivia Green",
+        "price": 39.99,
+        "video_url": "https://vimeo.com/example/photography",
+        "thum_url": "https://images.unsplash.com/photo-1470225620780-dba8ba36b745"
+    },
+    {
+        "id": 8,
+        "title": "Graphic Design Basics",
+        "category": "Design",
+        "level": "Beginner",
+        "description": "Learn Adobe Photoshop and Illustrator fundamentals",
+        "instructor": "Robert Taylor",
+        "price": 49.99,
+        "video_url": "https://youtube.com/embed/graphic-design",
+        "thum_url": "https://images.unsplash.com/photo-1613909207039-6b173b755cc1"
+    },
+    {
+        "id": 9,
+        "title": "Cybersecurity Fundamentals",
+        "category": "Cybersecurity",
+        "level": "Advanced",
+        "description": "Protect systems and networks from digital attacks",
+        "instructor": "Michael Clark",
+        "price": 99.99,
+        "video_url": "https://vimeo.com/example/cybersecurity",
+        "thum_url": "https://images.unsplash.com/photo-1562813733-b31f71025d54"
+    },
+    {
+        "id": 10,
+        "title": "Advanced React Patterns",
+        "category": "Web Development",
+        "level": "Advanced",
+        "description": "Master React with modern state management and best practices",
+        "instructor": "Sophia Martinez",
+        "price": 69.99,
+        "video_url": "https://youtube.com/embed/react-advanced",
+        "thum_url": "https://images.unsplash.com/photo-1633356122544-f134324a6cee"
+    }
+]
