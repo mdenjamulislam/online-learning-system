@@ -6,6 +6,7 @@
         "level": "Beginner",
         "description": "A comprehensive guide to modern web development with HTML, CSS, and JavaScript",
         "instructor": "John Doe",
+        "instructor_image": "https://randomuser.me/api/portraits/men/1.jpg",
         "price": 49.99,
         "video_url": "https://vimeo.com/example/webdev",
         "thum_url": "https://images.unsplash.com/photo-1550439062-609e1531270e"
@@ -17,6 +18,7 @@
         "level": "Beginner",
         "description": "Learn Python programming from scratch with hands-on exercises",
         "instructor": "Jane Smith",
+        "instructor_image": "https://randomuser.me/api/portraits/women/2.jpg",
         "price": 0.0,
         "video_url": "https://youtube.com/embed/python101",
         "thum_url": "https://images.unsplash.com/photo-1542831371-29b0f74f9713"
@@ -28,6 +30,7 @@
         "level": "Intermediate",
         "description": "Build cross-platform mobile apps with React Native",
         "instructor": "Mike Johnson",
+        "instructor_image": "https://randomuser.me/api/portraits/men/3.jpg",
         "price": 79.99,
         "video_url": "https://vimeo.com/example/reactnative",
         "thum_url": "https://images.unsplash.com/photo-1581276879432-15e94d4dbdf2"
@@ -39,6 +42,7 @@
         "level": "Beginner",
         "description": "Master SEO, social media marketing, and content strategy",
         "instructor": "Sarah Wilson",
+        "instructor_image": "https://randomuser.me/api/portraits/women/4.jpg",
         "price": 29.99,
         "video_url": "https://youtube.com/embed/digital-marketing",
         "thum_url": "https://images.unsplash.com/photo-1499951360447-b19be8fe80f5"
@@ -50,6 +54,7 @@
         "level": "Intermediate",
         "description": "Create beautiful and user-friendly interfaces",
         "instructor": "Emily Brown",
+        "instructor_image": "https://randomuser.me/api/portraits/women/5.jpg",
         "price": 59.99,
         "video_url": "https://vimeo.com/example/uiux",
         "thum_url": "https://images.unsplash.com/photo-1517694712202-14dd9538aa97"
@@ -61,6 +66,7 @@
         "level": "Intermediate",
         "description": "Introduction to data analysis and machine learning",
         "instructor": "David Lee",
+        "instructor_image": "https://randomuser.me/api/portraits/men/6.jpg",
         "price": 89.99,
         "video_url": "https://youtube.com/embed/datascience",
         "thum_url": "https://images.unsplash.com/photo-1551288049-bebda4e38f71"
@@ -72,6 +78,7 @@
         "level": "Advanced",
         "description": "Professional photography techniques and editing",
         "instructor": "Olivia Green",
+        "instructor_image": "https://randomuser.me/api/portraits/women/7.jpg",
         "price": 39.99,
         "video_url": "https://vimeo.com/example/photography",
         "thum_url": "https://images.unsplash.com/photo-1470225620780-dba8ba36b745"
@@ -83,6 +90,7 @@
         "level": "Beginner",
         "description": "Learn Adobe Photoshop and Illustrator fundamentals",
         "instructor": "Robert Taylor",
+        "instructor_image": "https://randomuser.me/api/portraits/men/8.jpg",
         "price": 49.99,
         "video_url": "https://youtube.com/embed/graphic-design",
         "thum_url": "https://images.unsplash.com/photo-1613909207039-6b173b755cc1"
@@ -94,6 +102,7 @@
         "level": "Advanced",
         "description": "Protect systems and networks from digital attacks",
         "instructor": "Michael Clark",
+        "instructor_image": "https://randomuser.me/api/portraits/men/9.jpg",
         "price": 99.99,
         "video_url": "https://vimeo.com/example/cybersecurity",
         "thum_url": "https://images.unsplash.com/photo-1562813733-b31f71025d54"
@@ -105,6 +114,7 @@
         "level": "Advanced",
         "description": "Master React with modern state management and best practices",
         "instructor": "Sophia Martinez",
+        "instructor_image": "https://randomuser.me/api/portraits/women/10.jpg",
         "price": 69.99,
         "video_url": "https://youtube.com/embed/react-advanced",
         "thum_url": "https://images.unsplash.com/photo-1633356122544-f134324a6cee"

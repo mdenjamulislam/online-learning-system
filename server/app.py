@@ -27,6 +27,7 @@ def init_db():
                     level VARCHAR(255), ## Beginner, Intermediate, Advanced
                     description TEXT,
                     instructor VARCHAR(255),
+                    insstructor_image VARCHAR(255),
                     price DECIMAL(5,2),
                     video_url VARCHAR(255),
                     thum_url VARCHAR(255)

@@ -1,10 +1,11 @@
 import React from "react";
 import { CiSearch } from "react-icons/ci";
+import Courses from "../../components/Courses/Courses";
 
 const Home = () => {
     return (
         <>
-            <section className="hero bg-base-200 min-h-svh">
+            <section className="hero bg-base-200 py-12 md:py-20 xl:py-32">
                 <div className="hero-content text-center">
                     <div className="max-w-xl">
                         <h1 className="text-5xl font-bold">
@@ -44,7 +45,7 @@ const Home = () => {
 
             <section>
                 <div className="container">
-                    <div className="flex items-center justify-between gap-4">
+                    <div className="flex items-center justify-between gap-4 mb-10 lg:mb-16">
                         <div className="space-y-3">
                             <span className="badge badge-warning -rotate-12">Our Course</span>
                             <h2 className="text-lg font-semibold md:text-2xl lg:text-4xl">Explore Our Courses</h2>
@@ -72,7 +73,7 @@ const Home = () => {
                     </div>
 
                     {/* Courses */}
-                    
+                    <Courses/>
                 </div>
             </section>
         </>
