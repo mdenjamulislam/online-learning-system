@@ -10,7 +10,7 @@ const Courses = () => {
         const source = axios.CancelToken.source();
         setLoading(true);
         axios
-            .get("courses.json", { cancelToken: source.token })
+            .get("http://127.0.0.1:5000/courses", { cancelToken: source.token })
             .then((response) => {
                 setCourses(response.data);
                 setLoading(false);

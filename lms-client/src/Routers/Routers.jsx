@@ -18,11 +18,10 @@ const Routers = () => {
                     <Route path="/login" element={<Login />} />
                     <Route path="/signup" element={<SignUp />} />
                 </Route>
-
-                <Route element={<ProtectedRoute />}>
-                    <Route path="/dashboard" element={<Dashboard />}>
-                        <Route index element={<CoursesList />} />
-                    </Route>
+            </Route>
+            <Route element={<ProtectedRoute />}>
+                <Route path="/dashboard" element={<Dashboard />}>
+                    <Route index element={<CoursesList />} />
                 </Route>
             </Route>
         </Routes>
