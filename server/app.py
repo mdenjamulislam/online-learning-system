@@ -27,7 +27,7 @@ def init_db():
                     level VARCHAR(255), ## Beginner, Intermediate, Advanced
                     description TEXT,
                     instructor VARCHAR(255),
-                    insstructor_image VARCHAR(255),
+                    instructor_image VARCHAR(255),
                     price DECIMAL(5,2),
                     video_url VARCHAR(255),
                     thum_url VARCHAR(255)
@@ -66,6 +66,10 @@ def init_db():
 
 # Get data from database
 
+# ---------------------
+#   Courses 
+# ---------------------
+
 # Get all courses
 @app.route('/courses', methods=['GET'])
 def get_courses():
@@ -88,6 +92,124 @@ def get_course_by_id(course_id):
     except Exception as e:
         return jsonify({'error': str(e)})
     
+# Add new course
+@app.route('/courses', methods=['POST'])
+def add_course():
+    try:
+        data = request.get_json()
+        
+        # Required fields should match your database schema
+        required_fields = [
+            'title', 
+            'price', 
+            'description', 
+            'instructor',
+            'instructor_image',
+            'category',
+            'level',
+            'video_url',
+            'thum_url'
+        ]
+        
+        # Check for all required fields
+        missing_fields = [field for field in required_fields if field not in data]
+        if missing_fields:
+            return jsonify({
+                'error': f'Missing required fields: {", ".join(missing_fields)}'
+            }), 400
+
+        with connection.cursor() as cursor:
+            sql = """INSERT INTO courses 
+                    (title, price, description, instructor, 
+                    instructor_image, category, level, video_url, thum_url) 
+                    VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s)"""
+            
+            cursor.execute(sql, (
+                data['title'],
+                data['price'],
+                data['description'],
+                data['instructor'],
+                data['instructor_image'],
+                data['category'],
+                data['level'],
+                data['video_url'],
+                data['thum_url']
+            ))
+            
+            connection.commit()
+            return jsonify({
+                'message': 'Course added successfully!',
+                'id': cursor.lastrowid
+            }), 201
+            
+    except Exception as e:
+        return jsonify({'error': str(e)}), 500
+
+# Update course
+# Update course
+@app.route('/courses/<int:course_id>', methods=['PUT'])
+def update_course(course_id):
+    try:
+        data = request.get_json()
+        updates = []
+        params = []
+
+        # Add all possible fields that can be updated
+        fields_mapping = {
+            'title': "title = %s",
+            'price': "price = %s",
+            'description': "description = %s",
+            'instructor': "instructor = %s",
+            'instructor_image': "instructor_image = %s",
+            'category': "category = %s",
+            'level': "level = %s",
+            'video_url': "video_url = %s",
+            'thum_url': "thum_url = %s"
+        }
+
+        for field, sql_part in fields_mapping.items():
+            if field in data:
+                updates.append(sql_part)
+                params.append(data[field])
+
+        if not updates:
+            return jsonify({'error': 'No fields to update'}), 400
+
+        params.append(course_id)
+        
+        with connection.cursor() as cursor:
+            sql = f"UPDATE courses SET {', '.join(updates)} WHERE id = %s"
+            cursor.execute(sql, params)
+            connection.commit()
+            
+            if cursor.rowcount == 0:
+                return jsonify({'error': 'Course not found'}), 404
+                
+            return jsonify({'message': 'Course updated successfully!'}), 200
+    except Exception as e:
+        return jsonify({'error': str(e)}), 500
+
+# Delete course
+@app.route('/courses/<int:course_id>', methods=['DELETE'])
+def delete_course(course_id):
+    try:
+        with connection.cursor() as cursor:
+            cursor.execute("DELETE FROM courses WHERE id = %s", (course_id,))
+            connection.commit()
+            
+            if cursor.rowcount == 0:
+                return jsonify({'error': 'Course not found'}), 404
+                
+            return jsonify({'message': 'Course deleted successfully!'}), 200
+    except Exception as e:
+        return jsonify({'error': str(e)}), 500
+
+
+
+# ---------------------
+#   Student
+# ---------------------
+
 # Get all students
 @app.route('/students', methods=['GET'])
 def get_students():
