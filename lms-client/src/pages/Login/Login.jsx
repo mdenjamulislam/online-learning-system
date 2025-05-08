@@ -28,8 +28,11 @@ const Login = () => {
                             <div>
                                 <a className="link link-hover">Forgot password?</a>
                             </div>
-                            <button className="btn btn-neutral mt-4">Login</button>
                         </fieldset>
+                        <button className="btn btn-neutral mt-4">Login</button>
+                        <div>
+                            <p>Are you new? <a href="/signup">Sign Up</a></p>
+                        </div>
                     </form>
                 </div>
             </div>

@@ -5,7 +5,7 @@ import Courses from "../../components/Courses/Courses";
 const Home = () => {
     return (
         <>
-            <section className="hero bg-base-200 py-12 md:py-20 xl:py-32">
+            <section className="hero bg-base-300 py-12 md:py-20 xl:py-32">
                 <div className="hero-content text-center">
                     <div className="max-w-xl">
                         <h1 className="text-5xl font-bold">
@@ -43,7 +43,7 @@ const Home = () => {
                 </div>
             </section>
 
-            <section>
+            <section className="section--padding">
                 <div className="container">
                     <div className="flex items-center justify-between gap-4 mb-10 lg:mb-16">
                         <div className="space-y-3">
